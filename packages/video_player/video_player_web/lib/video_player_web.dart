@@ -78,7 +78,8 @@ class VideoPlayerPlugin extends VideoPlayerPlatform {
       ..src = uri
       ..style.border = 'none'
       ..style.height = '100%'
-      ..style.width = '100%';
+      ..style.width = '100%',
+      ..style.objectFit = 'fill';
 
     // TODO(hterkelsen): Use initialization parameters once they are available
     ui.platformViewRegistry.registerViewFactory(
