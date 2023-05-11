@@ -79,7 +79,7 @@ class VideoPlayerPlugin extends VideoPlayerPlatform {
       ..style.border = 'none'
       ..style.height = '100%'
       ..style.width = '100%'
-      ..style.pointerEvents = 'non',
+      ..style.pointerEvents = 'none',
       ..style.objectFit = 'fill';
 
     // TODO(hterkelsen): Use initialization parameters once they are available
