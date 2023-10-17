@@ -74,12 +74,14 @@ class VideoPlayerPlugin extends VideoPlayerPlatform {
     }
 
     final VideoElement videoElement = VideoElement()
+      ..crossOrigin = "Anonymous"
       ..id = 'videoElement-$textureId'
       ..src = uri
       ..style.border = 'none'
       ..style.height = '100%'
       ..style.width = '100%'
       ..style.pointerEvents = 'none'
+      ..
       ..style.objectFit = 'fill';
 
     // TODO(hterkelsen): Use initialization parameters once they are available
